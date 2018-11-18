@@ -5,7 +5,7 @@ https://www.slideshare.net/pyrasis/docker-docker-38286477 (KOR.ver)
 
 
 
-https://docker-curriculum.com/(ENG.ver)
+https://docker-curriculum.com/ (ENG.ver)
 
 
 
