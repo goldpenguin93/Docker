@@ -3,14 +3,15 @@ Docker is a computer program that performs operating-system-level virtualization
 
 Docker is used to run software packages called "containers". Containers are isolated from each other and bundle their own tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from "images" that specify their precise contents. Images are often created by combining and modifying standard images downloaded from publi
 
-Technology
+<h2>Technology</h2>
 
 Docker can use different interfaces to access virtualization features of the Linux kernel.
 Docker is developed primarily for Linux, where it uses the resource isolation features of the Linux kernel such as cgroups and kernel namespaces, and a union-capable file system such as OverlayFS and others to allow independent "containers" to run within a single Linux instance, avoiding the overhead of starting and maintaining virtual machines (VMs). The Linux kernel's support for namespaces mostly isolates an application's view of the operating environment, including process trees, network, user IDs and mounted file systems, while the kernel's cgroups provide resource limiting for memory and CPU.[Since version 0.9, Docker includes the libcontainer library as its own way to directly use virtualization facilities provided by the Linux kernel, in addition to using abstracted virtualization interfaces via libvirt, LXC and systemd-nspawn.
 
 Building on top of facilities provided by the Linux kernel (primarily cgroups and namespaces), a Docker container, unlike a virtual machine, does not require or include a separate operating system. Instead, it relies on the kernel's functionality and uses resource isolation for CPU and memory,and separate namespaces to isolate the application's view of the operating system. Docker accesses the Linux kernel's virtualization features either directly using the libcontainer library, which is available as of Docker 0.9, or indirectly via libvirt, LXC (Linux Containers) or systemd-nspawn.
 
-Components
+<h2>Components</h2>
+
 The Docker software is a service consisting of three components:
 
 Software: The Docker daemon, called dockerd, is a persistent process that manages Docker containers and handles container objects. The daemon listens for requests sent via the Docker Engine API.The Docker client program, called docker, provides a command-line interface that allows users to interact with Docker daemons.
@@ -21,8 +22,8 @@ A Docker service allows containers to be scaled across multiple Docker daemons. 
 Registries: A Docker registry is a repository for Docker images. Docker clients connect to registries to download ("pull") images for use or upload ("push") images that they have built. Registries can be public or private. Two main public registries are Docker Hub and Docker Cloud. Docker Hub is the default registry where Docker looks for images
 
 
-Tools
-Docker Compose is a tool for defining and running multi-container Docker applications.It uses YAML files to configure the application's services and performs the creation and start-up process of all the containers with a single command. The docker-compose CLI utility allows users to run commands on multiple containers at once, for example, building images, scaling containers, running containers that were stopped, and more. Commands related to image manipulation, or user-interactive options, are not relevant in Docker Compose because they address one container.The docker-compose.yml file is used to define an application's services and includes various configuration options. For example, the build option defines configuration options such as the Dockerfile path, the command option allows one to override default Docker commands, and more.The first public version of Docker Compose (version 0.0.1) was released on December 21, 2013.[42] The first production-ready version (1.0) was made available on October 16, 2014
+<h2>Tools</h2>
+Docker Compose is a tool for defining and running multi-container Docker applications.It uses YAML files to configure the application's services and performs the creation and start-up process of all the containers with a single command. The docker-compose CLI utility allows users to run commands on multiple containers at once, for example, building images, scaling containers, running containers that were stopped, and more. Commands related to image manipulation, or user-interactive options, are not relevant in Docker Compose because they address one container.The docker-compose.yml file is used to define an application's services and includes various configuration options. For example, the build option defines configuration options such as the Dockerfile path, the command option allows one to override default Docker commands, and more.The first public version of Docker Compose (version 0.0.1) was released on December 21, 2013 The first production-ready version (1.0) was made available on October 16, 2014
 Docker Swarm provides native clustering functionality for Docker containers, which turns a group of Docker engines into a single virtual Docker engine. In Docker 1.12 and higher, Swarm mode is integrated with Docker Engine. The swarm CLI utility allows users to run Swarm containers, create discovery tokens, list nodes in the cluster, and more. The docker node CLI utility allows users to run various commands to manage nodes in a swarm, for example, listing the nodes in a swarm, updating nodes, and removing nodes from the swarm. Docker manages swarms using the Raft Consensus Algorithm. According to Raft, for an update to be performed, the majority of Swarm nodes need to agree on the update.
 Operation
 Docker implements a high-level API to provide lightweight containers that run processes in isolation.
@@ -35,7 +36,7 @@ Because Docker containers are lightweight, a single server or virtual machine ca
 
 Using containers may simplify the creation of highly distributed systems by allowing multiple applications, worker tasks and other processes to run autonomously on a single physical machine or across multiple virtual machines. This allows the deployment of nodes to be performed as the resources become available or when more nodes are needed, allowing a platform as a service (PaaS)-style of deployment and scaling for systems such as Apache Cassandra, MongoDB and Riak.
 
-Integration
+<h2>Integration</h2>
 Docker can be integrated into various infrastructure tools, including Amazon Web Services, Ansible, CFEngine, Chef,Google Cloud Platform,IBM Bluemix, HPE Helion Stackato, Jelastic, Jenkins, KubernetesMicrosoft Azure,OpenStack Nova,OpenSVC,Oracle Container Cloud Service,Puppet ProGet, Salt, Vagrant, and VMware vSphere Integrated Containers.
 
 The Cloud Foundry Diego project integrates Docker into the Cloud Foundry PaaS.
