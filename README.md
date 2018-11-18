@@ -1,6 +1,8 @@
-<h1>It is Doker Tutorial.(KOR.ver) </h2> 
+<h1>It is Doker Tutorial. </h2> 
 
-https://www.slideshare.net/pyrasis/docker-docker-38286477
+
+https://www.slideshare.net/pyrasis/docker-docker-38286477 (KOR.ver)
+https://docker-curriculum.com/(ENG.ver)
 
 
 
