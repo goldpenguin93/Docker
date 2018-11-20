@@ -67,3 +67,7 @@ For Windows
 On October 15, 2014, Microsoft announced integration of the Docker engine into the next Windows Server release, and native support for the Docker client role in Windows. On June 8, 2016, Microsoft announced that Docker now could be used natively on Windows 10 with Hyper-V Containers, to build, ship and run containers utilizing the Windows Server 2016 Technical Preview 5 Nano Server container OS image.
 
 Since then, a feature known as Windows Containers was made available for Windows 10 and Windows Server 2016. There are two types of Windows Containers: "Windows Server Containers" and "Hyper-V Isolation". The former has nothing to do with Docker. The latter, however, is a form of hardware virtualization (as opposed to OS-level virtualization) and uses Docker to deliver the guest OS image. The guest OS image is a Windows Nano Server image, which is 652 MB in size and has the same limitations of Nano Server, as well as a separate end-user license agreement.
+
+
+<h2>Reference site<h2>
+https://www.wikipedia.org/
