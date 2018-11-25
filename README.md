@@ -1,4 +1,4 @@
-<h1>It is Doker Tutorial. </h2> 
+<h1>It is Docker Tutorial. </h2> 
 
 
 https://www.slideshare.net/pyrasis/docker-docker-38286477 (KOR.ver)
